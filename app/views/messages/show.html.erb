@@ -1,0 +1,45 @@
+<div>
+  <div class="py-4">
+    <p style="color: green"><%= notice %></p>
+  </div>
+  <div class="py-4" >
+    <div> <span><strong>ID: </strong> <%= @message.id %> </span>
+    <div> <span><strong>Status: </strong> <%= @message.status %> </span>
+    <div> <span><strong>Sender Number: </strong> <%= @message.sender_number %> </span>
+  </div>
+  <div class="py-2">
+    <% if @message.raw_response.keys.count > 0 %>
+      <h1 class="details mt-4 mb-2"> API raw response </h4>
+      <hr class="my-2">
+      <div id="raw_response mt-4">
+        <div class="overflow-x-auto relative">
+          <table class="table table-fixed border-collapse table-auto w-full text-sm">
+            <thead>
+              <tr>
+              <th>Field name</th>
+              <th>Field value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @message.raw_response.each do |key, value| %>
+                <tr>
+                  <td><%= key %></td>
+                  <td><%= value %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="py-4">
+    <%= link_to "Edit this message", edit_message_path(@message), class:"navigator" %> |
+    <%= link_to "Back to messages", messages_path, class:"navigator" %>
+    <div class="py-2">
+      <%= button_to message_path, class:"btn btn-primary py-2 hover:bg-grey text-grey-darkest py-2 px-4 rounded inline-flex items-center", method: :delete do%>
+        <span>Destroy this message</span>
+      <% end %>
+    </div>
+  </div>
+</div>

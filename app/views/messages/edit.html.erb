@@ -1,0 +1,12 @@
+<div>
+  <%= render "powered_by", title: "Edit Message" %>
+
+  <div class="py-4">
+    <%= render "form", message: @message %>
+  </div>
+
+  <div class="py-4">
+    <%= link_to "Show this message", @message, class:"navigator" %> |
+    <%= link_to "Back to messages", messages_path, class:"navigator" %>
+  </div>
+</div>

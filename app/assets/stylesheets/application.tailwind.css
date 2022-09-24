@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main {
+  background-color: #0f172a;
+}
+
+h1, li, p, span { @apply text-white; }
+
+@layer components {
+  
+  .navigator {
+    color:gray;
+  }
+  
+  th {
+    @apply border-b dark:border-slate-600 font-medium p-4 pl-8 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left;
+  }
+
+  tbody {
+    @apply bg-white dark:bg-slate-800;
+  }
+
+  td {
+    @apply border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400;
+  }
+    
+  .btn-primary {
+    @apply py-2 px-4 bg-blue-200 text-black;
+  }
+
+  .btn-secondary {
+    @apply py-2 px-4 bg-gray-200 text-black rounded-md;
+  }
+
+  .btn-primary > span {
+    @apply text-black;
+  }
+
+  .form-label {
+    @apply block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300;
+  }
+
+  .form-input {
+    @apply mb-6 py-2 bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 cursor-not-allowed dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500;
+  }
+
+  .title {
+    @apply text-4xl text-white font-bold text-gray-900 dark:text-gray-300;
+  }
+
+  .details {
+    @apply text-2xl text-white font-bold text-gray-900 dark:text-gray-300;
+  }
+}
+

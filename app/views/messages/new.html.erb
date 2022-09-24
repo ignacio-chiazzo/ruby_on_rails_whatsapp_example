@@ -1,0 +1,12 @@
+<div class="py-1">
+  <div class="py-4">
+    <h1 class="title">New message</h1>
+  </div>
+  <div class="py-4">
+    <%= render "form", message: @message %>
+  </div>
+  <div class="py-4">
+    <%= link_to "Back to messages", messages_path, class:"navigator" %>
+  </div>
+</div>
+<br>
