@@ -3,6 +3,14 @@
 This library is a Rails application example of using the [Ruby Whatsapp SDK library](https://github.com/ignacio-chiazzo/ruby_whatsapp_sdk) to communicate between a Web application with Whatsapp.
 This application lets you send Whatsapp messages and view them on the Web.
 
+
+## Demo
+
+https://user-images.githubusercontent.com/11672878/193464439-d6ff27c8-4e48-4f9c-8998-b958274b69f6.mp4
+
+
+
+
 ### Getting started
 
 1. Clone this repository.
@@ -22,3 +30,7 @@ You can use webhooks to receive alerts when users communicate with your account.
 Copy the ngrok address from the console e.g. `https://1234-123-123-12-123.ngrok.io`
 1. Add the address to the `config/environments/development.rb` file.
 1. Go to the Meta panel and subscribe to the webhook. You will need to paste the ngrok address in Meta.
+
+### Development
+
+This repository uses [tailwind-css rails](https://github.com/rails/tailwindcss-rails). To update the assets automatically, run `rails tailwindcss:watch`.
