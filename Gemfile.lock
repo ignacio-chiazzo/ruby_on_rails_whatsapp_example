@@ -243,6 +243,7 @@ GEM
       sorbet
       sorbet-runtime
       zeitwerk (~> 2.6.0)
+    will_paginate (3.3.1)
     xpath (3.2.0)
       nokogiri (~> 1.8)
     zeitwerk (2.6.0)
@@ -272,6 +273,7 @@ DEPENDENCIES
   web-console
   webdrivers
   whatsapp_sdk
+  will_paginate (~> 3.3)
 
 BUNDLED WITH
    2.3.9

@@ -20,6 +20,7 @@
             <td><p><%= link_to "Details", message, class:"btn-secondary" %></p></td>
           </tr>
         <% end %>
+        <%= will_paginate @messages %>
       </tbody>
       </table>
     </div>
