@@ -20,7 +20,10 @@
             <td><p><%= link_to "Details", message, class:"btn-secondary" %></p></td>
           </tr>
         <% end %>
-        <%= will_paginate @messages %>
+
+        <div class='mx-auto text-center my-4'>
+          <%= will_paginate @messages %>
+        </div>
       </tbody>
       </table>
     </div>
