@@ -18,7 +18,7 @@
 @tailwind utilities;
 
 .main {
-  background-color: #0f172a;
+  @apply bg-white dark:bg-slate-900;
 }
 
 h1, li, p, span { @apply text-white; }
