@@ -2,7 +2,7 @@ class MessagesController < ApplicationController
   before_action :set_message, only: %i[ show edit update destroy ]
 
   def index
-    @messages = Message.last(25).reverse
+    @messages = Message.paginate(page: params[:page], per_page: 10).order(created_at: :desc)
   end
 
   def show
