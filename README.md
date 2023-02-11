@@ -16,7 +16,7 @@ https://user-images.githubusercontent.com/11672878/193464439-d6ff27c8-4e48-4f9c-
 1. Clone this repository.
 1. Run `bundle install`.
 1. Run the server `bundle exec rails s`
-1. Modify the access token in the [`whatsapp_sdk` initializer](https://github.com/ignacio-chiazzo/ruby_on_rails_whatsapp_example/blob/main/config/initializers/whatsapp_sdk.rb#L2). 
+1. Modify the access token in the [`whatsapp_sdk` initializer](https://github.com/ignacio-chiazzo/ruby_on_rails_whatsapp_example/blob/main/config/initializers/whatsapp_sdk.rb#L2). Note that if you change the file you have to restart the server since the file lives under initializers.
 1. Open the web application in your browser http://localhost:3000
 1. Try sending a message on WhatsApp.
 
