@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-gem "whatsapp_sdk"
+gem "whatsapp_sdk", path: "/Users/ignaciochiazzo/src/whatsapp_sdk" # "~> 0.12.0"
 
 gem "pry"
 gem "pry-nav"
