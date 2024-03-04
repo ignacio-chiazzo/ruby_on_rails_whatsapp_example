@@ -1,3 +1,12 @@
+PATH
+  remote: /Users/ignaciochiazzo/src/whatsapp_sdk
+  specs:
+    whatsapp_sdk (0.12.0)
+      faraday (~> 2)
+      faraday-multipart (~> 1)
+      sorbet-runtime (~> 0.5)
+      zeitwerk (~> 2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -93,12 +102,12 @@ GEM
       reline (>= 0.3.1)
     digest (3.1.0)
     erubi (1.11.0)
-    faraday (2.3.0)
-      faraday-net_http (~> 2.0)
-      ruby2_keywords (>= 0.0.4)
+    faraday (2.9.0)
+      faraday-net_http (>= 2.0, < 3.2)
     faraday-multipart (1.0.4)
       multipart-post (~> 2)
-    faraday-net_http (2.1.0)
+    faraday-net_http (3.1.0)
+      net-http
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.12.0)
@@ -123,7 +132,9 @@ GEM
     mini_mime (1.1.2)
     minitest (5.16.3)
     msgpack (1.5.6)
-    multipart-post (2.2.3)
+    multipart-post (2.4.0)
+    net-http (0.4.1)
+      uri
     net-imap (0.2.3)
       digest
       net-protocol
@@ -143,7 +154,6 @@ GEM
       racc (~> 1.4)
     nokogiri (1.13.8-x86_64-linux)
       racc (~> 1.4)
-    oj (3.13.21)
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -187,18 +197,13 @@ GEM
     reline (0.3.1)
       io-console (~> 0.5)
     rexml (3.2.5)
-    ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     selenium-webdriver (4.4.0)
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
-    sorbet (0.5.10474)
-      sorbet-static (= 0.5.10474)
-    sorbet-runtime (0.5.10474)
-    sorbet-static (0.5.10474-universal-darwin-21)
-    sorbet-static (0.5.10474-x86_64-linux)
+    sorbet-runtime (0.5.11284)
     sprockets (4.1.1)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -223,6 +228,7 @@ GEM
       railties (>= 6.0.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
+    uri (0.13.0)
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -236,13 +242,6 @@ GEM
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
-    whatsapp_sdk (0.6.0)
-      faraday (~> 2.3.0)
-      faraday-multipart (~> 1.0.4)
-      oj (~> 3.13.13)
-      sorbet
-      sorbet-runtime
-      zeitwerk (~> 2.6.0)
     will_paginate (3.3.1)
     xpath (3.2.0)
       nokogiri (~> 1.8)
@@ -272,7 +271,7 @@ DEPENDENCIES
   tzinfo-data
   web-console
   webdrivers
-  whatsapp_sdk
+  whatsapp_sdk!
   will_paginate (~> 3.3)
 
 BUNDLED WITH
